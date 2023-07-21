@@ -13,7 +13,7 @@ def preprocess_data(data_dir1,data_dir2) :
 
     # print(train_data.shape[0])    
 
-    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True,mirror='tuna')
     sentences = []
     labels_content = []
     labels_wording = []
